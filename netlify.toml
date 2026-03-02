@@ -1,0 +1,8 @@
+[build]
+  command = "cd client && npm run build"
+  publish = "client/dist"
+  functions = "client/netlify/functions"
+
+[dev]
+  command = "npm run dev --prefix client"
+  functions = "client/netlify/functions"
